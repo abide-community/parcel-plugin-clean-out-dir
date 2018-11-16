@@ -1,14 +1,17 @@
 {
   "name": "@abide-community/parcel-plugin-clean-out-dir",
   "description": "Cleans the Parcel output directory before building",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "license": "MIT",
   "author": "Mackie Underdown <macklinu@gmail.com>",
-  "repository": "abide-community/parcel-plugin-clean-out-dir",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abide-community/parcel-plugin-clean-out-dir.git"
+  },
   "homepage": "https://github.com/abide-community/parcel-plugin-clean-out-dir",
   "keywords": [
     "parcel",
@@ -17,12 +20,19 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "test": "echo 'no tests'",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
   "dependencies": {
     "del": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-macklinu": "^1.1.1",
-    "prettier": "^1.15.2"
+    "prettier": "^1.15.2",
+    "semantic-release": "^15.12.0",
+    "travis-deploy-once": "^5.0.9"
   }
 }
